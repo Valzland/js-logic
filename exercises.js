@@ -47,8 +47,9 @@ console.log('please work');
  * Console.log your result.
 */
 function login(password){
-  if (password == 'test1234')
+  if (password == 'test1234'){
   return 'Login Success!';
+}
 }
 console.log (login('test1234'))
 /*
@@ -63,8 +64,13 @@ console.log (login('test1234'))
  * The function will return true if the first number is greater than the second.
  * Console.log your result.
 */
+function isGreaterThan(first,second){
+if (first > second){
+  return 'true';
+}
+}
 
-
+console.log(isGreaterThan(3,2))
 
 /*
  * #4
