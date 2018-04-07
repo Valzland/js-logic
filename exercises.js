@@ -36,7 +36,7 @@ console.log (canVote(19));
 
 console.log('please work');
 /*
- * #2
+ * #
  * Function - login
  * Create a function named `login` which will take a parameter: `password`.
  *
@@ -46,8 +46,11 @@ console.log('please work');
  * The function will return the message: "Login Success!", if the string passed into the function is "test1234"
  * Console.log your result.
 */
-
-
+function login(password){
+  if (password == 'test1234')
+  return 'Login Success!';
+}
+console.log (login('test1234'))
 /*
  * #3
  * Function - isGreaterThan
