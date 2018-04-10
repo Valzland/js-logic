@@ -228,7 +228,7 @@ console.log(evenStevens(13))
  * Console.log your result.
 */ 
 function daClub(cover,age){
-  if (cover&&age>=21){
+  if (cover,age>=21){
     return 'Welcome to the Legends Lounge';
   }else{
     return 'Chuck E Cheese is across the street.'
@@ -292,7 +292,20 @@ console.log(moneyTrain(false))
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 21
+var doughnutPrice = 4
+var doughnutBought = 0
 
+function buyDoughnut(){
+if (budget>=4){
+ budget-=doughnutPrice;
+ doughnutBought++
+}
+}
+buyDoughnut()
+buyDoughnut()
+console.log(budget)
+console.log(doughnutBought)
 
 
 /*Final Boss*/
