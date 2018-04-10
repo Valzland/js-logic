@@ -83,8 +83,12 @@ console.log(isGreaterThan(3,2))
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
-
-
+function mustBeTrue(boo){
+if (boo===true){
+  return 'true';
+}
+}
+console.log(mustBeTrue(true))
 
 /*
  * #5
@@ -97,8 +101,12 @@ console.log(isGreaterThan(3,2))
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
-
-
+function bigBird(word){
+if (word.length===3){
+  return 'Word to Big Bird'
+}
+} 
+console.log (bigBird('try'))
 
 /*
  * #6
