@@ -364,7 +364,11 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var Players = ['1', '2', '3', '4', '5'];
 
+for (var i=0; i<Players.length; i++){
+  console.log("Player: "+Players[i]);
+}
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
