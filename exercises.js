@@ -143,6 +143,8 @@ console.log(isEqual('good','god'))
 */
 
 
+
+
 /*
  * #8
  * Function - spareChange
@@ -214,7 +216,14 @@ console.log(isEqual('good','god'))
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
-
+function graduation(credit, thesis){
+  if (credit>=120 || thesis===true){
+    return 'Congratulations on a job well done.';
+  }else{ 
+    return 'See you in summer school'
+    }
+  }
+console.log(graduation(110,false))
 
 
 /*
@@ -228,8 +237,16 @@ console.log(isEqual('good','god'))
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
-
-
+function moneyTrain(speed){
+  if (speed<50){
+    return "Your are riding Honolulu's Rail";
+  }else if (speed<100){
+    return "you are riding an Amtrak";
+  }else if(speed>=100){
+  return "now yo ballin' in the Shinkasen!"
+  }
+}
+console.log(moneyTrain(false))
 /*
  * #14
  * Function - buyDoughnut
@@ -244,10 +261,36 @@ console.log(isEqual('good','god'))
  * Console.log budget and doughnutBought again.
 */ 
 
+
+
+
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
+  var day= 'Wednesday';
+  var menu = null;
 
+function dailySpecials(special){
+ switch (special){
+   case "Monday":
+   menu = 'kalua pig';
+   break;
+   case "Tuesday":
+   menu = 'squid luau';
+   break;
+   case "Wednesday":
+   menu = 'chicken longrice';
+   break;
+   case "Thursday":
+   menu = 'beef stew';
+   break;
+   case "Friday":
+   menu = 'laulau';
+   break;
+ }
+ return menu;
+}
+console.log(dailySpecials('Tuesday'))
 
 
 /*
