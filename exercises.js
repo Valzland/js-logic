@@ -374,6 +374,9 @@ for (var i=0; i<Players.length; i++){
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+  for (var i=0; i<myFavFoods.length; i++){
+    console.log(myFavFoods[i])
+  }
 
 
 /*
@@ -390,8 +393,18 @@ for (var i=0; i<Players.length; i++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+var numArray= [3,45,21,99,78]
+var total= 0
+function sumItUp(arr){
+  for (var i=0; i<arr.length; i++){
+   // console.log(i)
+    console.log(arr[i])
+    total += arr[i]
+  }
 
-
+}
+sumItUp(numArray)
+console.log ('sum ' + total)
 
 /*
  * #18
